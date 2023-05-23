@@ -1,27 +1,52 @@
-# Adopet
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+# O que é a AdoPet? 🐕
 
-## Development server
+A Adopet foi o desafio da 4 edição do [Alura Challenges](https://www.alura.com.br/challenges/front-end) de Front-end, com o propósito de colocar em prática meus conhecimentos e criação de portfólio
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Projeto focado em layout responsivo, desenvolvido seguindo **metodologia mobile-first**. O design da interface de usuário são fornecidos e de autoria da Alura.
 
-## Code scaffolding
+**Sobre a AdoPet:**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+*A empresa AdoPet têm como objetivo fazer o intermédio entre adotantes de animais e ONGs que possuem foco de retirar animais da rua. Visando isso, ela precisa trazer mais usuários e aumentar a interação entre possíveis adotantes e representantes dessas ONGs e para isso, deseja implementar uma plataforma e levar a empresa pro mundo digital.*
 
-## Build
+## Stack utilizada
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Front-end:** Angular
 
-## Running unit tests
+**Back-end:** Cloud Firestore
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Funcionalidades
 
-## Running end-to-end tests
+- Layout responsivo para diferentes viewports
+- Login com autenticação 
+- Cadastro
+- Lista de pets (não dinâmico)
+- Formulário de mensagem (não dinâmico)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Rodando localmente
 
-## Further help
+*Este projeto foi genrado com [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.*
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Clone o projeto
+
+```bash
+  git clone https://link-para-o-projeto
+```
+
+Entre no diretório do projeto
+
+```bash
+  cd my-project
+```
+
+Instale as dependências
+
+```bash
+  npm install
+```
+
+Inicie o servidor
+
+```bash
+  npm run start
+```
