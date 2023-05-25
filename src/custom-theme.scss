@@ -1,0 +1,125 @@
+
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$p-color: (
+  50: #e3f3ff,
+  100: #bddfff,
+  200: #90ccff,
+  300: #5fb8ff,
+  400: #39a7ff,
+  500: #2196ff,
+  600: #3087ff,
+  700: #3773ff,
+  800: #3b60ec,
+  900: #3e3bcc,
+  contrast: (50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  )
+);
+
+$s-color: (
+  50: #e0f8f2,
+  100: #b2eddc,
+  200: #7de3c6,
+  300: #36d6ae,
+  400: #00ca9b,
+  500: #00be8b,
+  600: #00af7e,
+  700: #009d6d,
+  800: #008d5f,
+  900: #006f42,
+  contrast: (50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  )
+);
+
+$t-color: (
+  50: #ffebef,
+  100: #ffcdd3,
+  200: #ff9a99,
+  300: #fc7070,
+  400: #ff4a49,
+  500: #ff382b,
+  600: #fe2c2d,
+  700: #ec1f27,
+  800: #de1520,
+  900: #de1520,
+  contrast: (50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  )
+);
+
+
+$adopet-primary: mat.define-palette($p-color, 700, 500, 900);
+$adopet-accent: mat.define-palette($s-color, 300, 100, 700);
+$adopet-warn: mat.define-palette($t-color, 300, 100, 700);
+
+
+$adopet-theme: mat.define-light-theme((
+  color: (
+    primary: $adopet-primary,
+    accent: $adopet-accent,
+    warn: $adopet-warn,
+  )
+));
+
+@include mat.all-component-themes($adopet-theme);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-400 {
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.text-500 {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.text-600 {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.text-700 {
+  font-family: "Poppins";
+  font-weight: 700;
+}
