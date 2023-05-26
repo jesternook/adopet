@@ -14,10 +14,12 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { HomeComponent } from './components/home/home.component';
 import { PagesModule } from './shared/pages/pages.module';
 import { environment } from './environments/environment';
+import { ExitComponent } from './utils/exit/exit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ExitComponent,
   ],
   imports: [
     BrowserModule,
