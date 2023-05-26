@@ -54,7 +54,7 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
     MatBadgeModule,
     MatProgressSpinnerModule,
     MatExpansionModule,
-    CdkAccordionModule
+    CdkAccordionModule,
   ]
 })
 export class MaterialModule { }

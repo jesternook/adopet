@@ -2,12 +2,13 @@ import { NgModule, inject } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { AuthGuard } from './guards/auth.guard';
+import { ExitComponent } from './utils/exit/exit.component';
 
 const routes: Routes = [
   {
     path: "",
     pathMatch:"full",
-    redirectTo: "home" 
+    redirectTo: "welcome"
   },
   {
     path: "welcome",
@@ -31,6 +32,16 @@ const routes: Routes = [
     loadChildren: () => import('./components/message/message.module').then(m => m.MessageModule),
     canActivate: [AuthGuard]
   },
+  {
+    path: "profile",
+    loadChildren: () => import('./components/profile/profile.module').then(m => m.ProfileModule),
+    canActivate: [AuthGuard]
+  },
+  {
+    path: "logout",
+    component: ExitComponent,
+    canActivate: [AuthGuard]
+  }
 ]
 
 @NgModule({

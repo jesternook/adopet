@@ -91,6 +91,7 @@ $adopet-theme: mat.define-light-theme((
 
 @include mat.all-component-themes($adopet-theme);
 
+
 html,
 body {
   height: 100%;
@@ -122,4 +123,17 @@ body {
 .text-700 {
   font-family: "Poppins";
   font-weight: 700;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 0,
+  'GRAD' -25,
+  'opsz' NaN
+}
+.container {
+  width: clamp(300px, 100%, 1200px);
+  margin: 50px auto 0 auto;
+  padding: 0 30px;
 }
