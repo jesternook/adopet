@@ -1,17 +1,18 @@
-mat-icon {
+a mat-icon {
     color: #FCF0E3;
+    transform: scale(1.3);
 }
 
-mat-toolbar-row{
+mat-toolbar-row {
     display: flex;
     justify-content: flex-start;
-    gap: 10%;
+    gap: 3rem;
+    padding: 0 3rem;
 }
 
 .navbar {
-    width: 100%;
-    height: 8%;
-    position: absolute;
+    height: 20%;
     align-items: center;
     justify-content: center;
+    padding: 1.5rem 0;
 }
