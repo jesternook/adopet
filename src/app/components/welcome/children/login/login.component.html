@@ -1,1 +1,39 @@
-<p>login works!</p>
+<div class="body-login">
+    <app-nav-bar></app-nav-bar>
+    <section class="content">
+        <div class="logo">
+            <img src="./assets/logo/Logo_-_azul.svg" alt="">
+        </div>
+        <div class="text-400 text">
+            <p>Já tem conta? Faça seu login:
+            </p>
+        </div>
+
+        <form class="text-400">
+            <label for="email">Email</label>
+            <mat-form-field color="primary">
+                <mat-label>Insira seu email
+                </mat-label>
+                <input id="email" type="email" matInput placeholder="" name="email">
+                <mat-error></mat-error>
+            </mat-form-field>
+
+            <label for="senha">Senha</label>
+            <mat-form-field color="primary">
+                <mat-label>Insira sua senha</mat-label>
+                <input id="senha" [type]="hide ? 'password' : 'text'" matInput placeholder="">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [ariaLabel]="'Esconder senha'"
+                    [ariaPressed]="hide">
+                    <mat-icon class="material-symbols-outlined">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+
+            <span class="text-400">Esqueci minha senha.</span>
+
+            <button mat-flat-button color="warn" class="text-600 login">Entrar</button>
+        </form>
+
+    </section>
+
+    <app-footer></app-footer>
+</div>
