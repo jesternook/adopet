@@ -1,0 +1,68 @@
+.body-register {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 5% 20% 5%;
+    flex: 1 1 auto;
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    img {
+        align-items: center;
+        width: 8.9rem;
+    }
+
+    .text {
+        font-size: 1rem;
+        color: #3772FF;
+        line-height: 1.4rem;
+
+        p {
+            text-align: center;
+            margin: 0.5rem 0 0.5rem 0;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+
+        mat-form-field {
+            width: 125%;
+            margin: 0;
+        }
+    }
+
+    label {
+        font-size: 1rem;
+        color: #737380;
+        margin-bottom: 0.4rem;
+    }
+
+    mat-label {
+        font-size: 0.75rem;
+    }
+
+    mat-icon {
+        color: #999999;
+    }
+
+    button.register {
+        color: #ffffff;
+        font-size: 1rem;
+        width: 9.25rem;
+        height: 2.5rem
+    }
+}

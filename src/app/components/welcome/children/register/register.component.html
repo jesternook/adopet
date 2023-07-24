@@ -1,1 +1,54 @@
-<p>register works!</p>
+<div class="body-register">
+    <app-nav-bar></app-nav-bar>
+    <section class="content">
+        <div class="logo">
+            <img src="./assets/logo/Logo_-_azul.svg" alt="">
+        </div>
+        <div class="text-400 text">
+            <p>Ainda não tem cadastro?</p>
+            <p>Então, antes de buscar seu melhor amigo, precisamos de alguns dados:
+            </p>
+        </div>
+
+        <form class="text-400">
+            <label for="email">Email</label>
+            <mat-form-field color="primary">
+                <mat-label>Escolha seu melhor email
+                </mat-label>
+                <input id="email" type="email" matInput placeholder="" name="email">
+                <mat-error></mat-error>
+            </mat-form-field>
+
+            <label for="nome">Nome</label>
+            <mat-form-field color="primary">
+                <mat-label>Digite seu nome completo</mat-label>
+                <input id="nome" type="text" name="nome" matInput placeholder="">
+            </mat-form-field>
+
+            <label for="senha">Senha</label>
+            <mat-form-field color="primary">
+                <mat-label>Crie sua senha</mat-label>
+                <input id="senha" [type]="hide ? 'password' : 'text'" matInput placeholder="">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [ariaLabel]="'Esconder senha'"
+                    [ariaPressed]="hide">
+                    <mat-icon class="material-symbols-outlined">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+
+            <label for="confirmaSenha">Confirma sua senha</label>
+            <mat-form-field color="primary">
+                <mat-label>Repita a senha criada acima</mat-label>
+                <input [type]="hide2 ? 'password' : 'text'" name="confirmaSenha" id="confirmaSenha" matInput>
+                <button mat-icon-button matSuffix (click)="hide2 = !hide2" [ariaLabel]="'Esconder senha'"
+                    [ariaPressed]="hide2">
+                    <mat-icon class="material-symbols-outlined">{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+
+            <button mat-flat-button color="warn" class="text-600 register">Cadastrar</button>
+        </form>
+
+    </section>
+
+    <app-footer></app-footer>
+</div>
