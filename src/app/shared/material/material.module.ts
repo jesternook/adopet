@@ -25,6 +25,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {CdkAccordionModule} from '@angular/cdk/accordion';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -55,6 +56,7 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
     MatProgressSpinnerModule,
     MatExpansionModule,
     CdkAccordionModule,
+    MatFormFieldModule,
   ]
 })
 export class MaterialModule { }
