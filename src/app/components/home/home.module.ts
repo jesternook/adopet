@@ -4,6 +4,8 @@ import { PagesModule } from 'src/app/shared/pages/pages.module';
 import { FooterModule } from '../footer/footer.module';
 import { MaterialModule } from 'src/app/shared/material/material.module';
 import { HomeComponent } from './home.component';
+import { HomeRoutingModuleModule } from './home-routing.module';
+import { NavBarModule } from '../nav-bar/nav-bar.module';
 
 
 
@@ -13,7 +15,10 @@ import { HomeComponent } from './home.component';
   ],
   imports: [
     CommonModule,
-    // FooterModule, 
+    HomeRoutingModuleModule,
+    MaterialModule,
+    NavBarModule,
+    FooterModule, 
     MaterialModule
   ],
   exports: [

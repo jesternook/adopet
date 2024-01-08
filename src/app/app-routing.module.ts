@@ -8,7 +8,7 @@ const routes: Routes = [
   {
     path: "",
     pathMatch:"full",
-    loadChildren: () => import ('./components/welcome/welcome.module').then(m => m.WelcomeModule)
+    loadChildren: () => import('./components/welcome/welcome.module').then(m => m.WelcomeModule)
   },
   {
     path: "login",
@@ -17,7 +17,7 @@ const routes: Routes = [
   {
     path: "home",
     loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule), 
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   },
   {
     path: "register",

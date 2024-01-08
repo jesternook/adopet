@@ -1,13 +1,24 @@
-a mat-icon {
-    color: #FFFFFF;
-    transform: scale(1.3);
+a {
+    mat-icon {
+        color: #FFFFFF;
+        transform: scale(1.3);
+    }
+
+    .account {
+        width: 2.5rem;
+    }
 }
 
 mat-toolbar-row {
     display: flex;
-    justify-content: flex-start;
-    gap: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0 3rem;
+
+    div {
+        display: flex;
+        gap: 3rem;
+    }
 }
 
 .navbar {

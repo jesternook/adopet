@@ -9,8 +9,8 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class WelcomeComponent implements OnInit {
 
-  public authService: AuthService;
-  public router: Router;
+  private authService: AuthService;
+  private router: Router;
 
   constructor(authService: AuthService, router: Router) {
     this.authService = authService;
